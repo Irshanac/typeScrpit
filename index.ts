@@ -24,3 +24,26 @@ const data:adminData={
     place:"kodakkalu"
 }
 console.log(data)
+
+
+//uinion and intersector
+let Skills:(string | number)[]=["asb","asx",1,2]
+
+//function 
+function getUsername(userDetails:Details){
+console.log(userDetails.getName)
+}
+getUsername(userDetails)
+//function
+function add (num1:number,num2:number):number{
+    return num1 + num2
+}
+console.log(add(3,4))
+//generic
+function getage<t>(age:t):t{
+    return age
+}
+getage<number>(20)
+getage<string>("20")
+//as const
+let readonly="irshana" as const
